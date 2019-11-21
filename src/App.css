@@ -48,8 +48,11 @@ table p{
 .tab-bar {
   background-color: lightgray;
 }
-.tab-bar Tab.label:selected {
-  color:red;
+.tab-bar Tab label {
+  color:black;
+}
+.MuiTab-wrapper {
+  color:black;
 }
 
 

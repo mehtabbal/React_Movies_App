@@ -76,9 +76,9 @@ export default function SimpleTabs() {
         className = "tab-bar"
         
         >
-          <Tab label="MOVIES" {...a11yProps(0)}/>
-          <Tab label="SEARCH RESULT" {...a11yProps(1)} />
-          <Tab label="TV SHOWS" {...a11yProps(2)} />
+          <Tab id = "t1" label="MOVIES" {...a11yProps(0)}/>
+          <Tab id = "t2" label="SEARCH RESULT" {...a11yProps(1)} />
+          <Tab id = "t3" label="TV SHOWS" {...a11yProps(2)} />
           
         </Tabs>
       </AppBar>
