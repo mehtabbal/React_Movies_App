@@ -44,7 +44,12 @@ table p{
   border-radius: none;
 
 }
- 
 
+.tab-bar {
+  background-color: lightgray;
+}
+.tab-bar Tab.label:selected {
+  color:red;
+}
 
 

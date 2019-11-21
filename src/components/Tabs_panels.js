@@ -73,6 +73,7 @@ export default function SimpleTabs() {
         <Tabs value={value} 
         onChange={handleChange} 
         variant="fullWidth"
+        className = "tab-bar"
         
         >
           <Tab label="MOVIES" {...a11yProps(0)}/>

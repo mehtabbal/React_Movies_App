@@ -16,21 +16,15 @@ const useStyles = makeStyles(theme => ({
     
     
   },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  
-  },
+ 
 }));
 
  function Category_movie() {
   const classes = useStyles();
   const [Category, setValue] = React.useState('');
-
   const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
-  React.useEffect(() => {
-    setLabelWidth(inputLabel.current.offsetWidth);
-  }, []);
+  
+  
 
   const handleChange = event => {
     setValue(event.target.value);
@@ -43,13 +37,8 @@ const useStyles = makeStyles(theme => ({
         Category
       </InputLabel>
       <Select
-        labelId="demo-simple-select-outlined-label"
-        id="demo-simple-select-outlined"
-        value={Category}
-        onChange={handleChange}
-        labelWidth={labelWidth}
-        
-      >
+      onChange={handleChange}
+       >
        
         <MenuItem value={'now_playing'}>Now Playing</MenuItem>
         <MenuItem value={'popular'}>Popular</MenuItem>

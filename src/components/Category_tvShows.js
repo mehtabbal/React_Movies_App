@@ -14,23 +14,15 @@ const useStyles = makeStyles(theme => ({
     
     
   },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  
-  },
+ 
 }));
 
  function Category_tvShows() {
   const classes = useStyles();
   const [Category, setValue] = React.useState('');
-
-  const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
-  React.useEffect(() => {
-    setLabelWidth(inputLabel.current.offsetWidth);
-  }, []);
-
-  const handleChange = event => {
+   const inputLabel = React.useRef(null);
+    
+   const handleChange = event => {
     setValue(event.target.value);
     new Tv_Show_Box({"info2": event.target.value});
   };
@@ -41,16 +33,9 @@ const useStyles = makeStyles(theme => ({
         Category
       </InputLabel>
       <Select
-        labelId="demo-simple-select-outlined-label"
-        id="demo-simple-select-outlined"
-        value={Category}
-        onChange={handleChange}
-        labelWidth={labelWidth}
-        
-      >
-        {/* <MenuItem value="">
-          <em></em>
-        </MenuItem> */}
+      onChange={handleChange}
+    >
+   
         <MenuItem value={'airing_today'}>Airing Today</MenuItem>
         <MenuItem value={'on_the_air'}>On The Air</MenuItem>
         <MenuItem value={'popular'}>Popular</MenuItem>
