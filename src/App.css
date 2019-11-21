@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  margin-left: 10%;;
+  margin-right: 10%;
+}
+
+.entry-header {
+  
+  min-height: 6vh;
+  text-align: center;
+  border: 1px solid black;
+  margin-left:20px;
+  margin-right:20px;
+  margin-top:20px;
+  
+}
+
+.entry-heading {
+  font-weight: bold;
+}
+
+
+#SearchContainer{
+  width: 70%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2.5fr 1fr 1fr;
+  margin-top: 30px;
+  margin-left: 15%;
+}
+
+
+table{
+  border-bottom: .5px solid black;
+  }
+table p{
+  margin: 0;
+  margin-left: 50px;
+}
+#SearchContainer button {
+  width:60%;
+  height:40px;
+  margin-top: 10px;
+  border-radius: none;
+
+}
+ 
+
+
+
